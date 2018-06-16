@@ -1,0 +1,31 @@
+****** To Do's *****
+
+->Ranged enemy attack
+    ->Need to animate the weapon
+
+->Level Design
+	->Parallax?
+
+->Boss room (incorporate 3 types of enemies into boss)
+
+->Camera adjustments
+    ->Smoothen the camera movement
+    ->Adjust the viewport to see a bigger portion of the level
+    ->Clamp the camera position on the edges of the levels
+
+
+->Set different attack method's damages differently
+
+
+****** Bugs ******
+
+-> Ranger enemy doesn't turn to face the player before it fires
+
+
+-> Enemy rigidbody type
+    ->Gravity doesn affect the current enemy since it is kinematic
+      But if we change the body type to dynamic, it can be easily 
+      pushed by player
+    ->Freezing x position blocks the patroling code, so its not 
+      a good solution, one dirty hack could be setting the mass 
+      of the enemies too high so they win the collisions
